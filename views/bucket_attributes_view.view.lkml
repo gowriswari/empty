@@ -15,10 +15,12 @@ view: bucket_attributes_view {
   dimension: labels {
     hidden: yes
     sql: ${TABLE}.labels ;;
+    #hidden: yes
   }
   dimension: lifecycle {
     type: yesno
     sql: ${TABLE}.lifecycle ;;
+    hidden: yes
   }
   dimension: location {
     type: string
