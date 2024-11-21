@@ -35,7 +35,7 @@ view: bucket_attributes_view {
     sql: ${TABLE}.name ;;
   }
   dimension: project {
-    type: number
+    type: string
     sql: ${TABLE}.project ;;
   }
   dimension: public__bucket_policy_only {
