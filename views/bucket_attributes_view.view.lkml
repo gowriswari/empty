@@ -19,12 +19,12 @@ view: bucket_attributes_view {
   dimension: lifecycle {
     type: yesno
     sql: ${TABLE}.lifecycle ;;
-    hidden: yes
+    #hidden: yes
   }
   dimension: location {
     type: string
     sql: ${TABLE}.location ;;
-    hidden: yes
+    #hidden: yes
   }
   dimension: metageneration {
     type: number
