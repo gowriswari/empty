@@ -13,19 +13,18 @@ view: bucket_attributes_view {
     sql: ${TABLE}.autoclass.toggleTime ;;
   }
   dimension: labels {
-    hidden: yes
-    sql: ${TABLE}.labels ;;
     #hidden: yes
+    sql: ${TABLE}.labels ;;
   }
   dimension: lifecycle {
     type: yesno
     sql: ${TABLE}.lifecycle ;;
-    #hidden: yes
+    hidden: yes
   }
   dimension: location {
     type: string
     sql: ${TABLE}.location ;;
-    #hidden: yes
+    hidden: yes
   }
   dimension: metageneration {
     type: number
