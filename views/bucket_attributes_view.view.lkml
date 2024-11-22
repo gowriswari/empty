@@ -24,7 +24,7 @@ view: bucket_attributes_view {
   dimension: location {
     type: string
     sql: ${TABLE}.location ;;
-    #hidden: yes
+    hidden: yes
   }
   dimension: metageneration {
     type: number
